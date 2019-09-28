@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp", "WhatsApp\WhatsApp.csproj", "{265FDA49-2ABE-4A6D-B468-DF17F73AC05A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Tests", "WhatsApp.Tests\WhatsApp.Tests.csproj", "{1DB625C5-E4B2-4B13-9EB1-C3D2F4C6250C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{265FDA49-2ABE-4A6D-B468-DF17F73AC05A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265FDA49-2ABE-4A6D-B468-DF17F73AC05A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265FDA49-2ABE-4A6D-B468-DF17F73AC05A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265FDA49-2ABE-4A6D-B468-DF17F73AC05A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB625C5-E4B2-4B13-9EB1-C3D2F4C6250C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB625C5-E4B2-4B13-9EB1-C3D2F4C6250C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB625C5-E4B2-4B13-9EB1-C3D2F4C6250C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB625C5-E4B2-4B13-9EB1-C3D2F4C6250C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16C071A5-2E61-4F61-837B-B4EDE1370CBA}
+	EndGlobalSection
+EndGlobal
