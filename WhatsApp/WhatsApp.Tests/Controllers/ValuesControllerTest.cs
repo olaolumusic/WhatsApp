@@ -7,6 +7,7 @@ using System.Web.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WhatsApp;
 using WhatsApp.Controllers;
+using WhatsApp.Controllers.APIs.v1;
 
 namespace WhatsApp.Tests.Controllers
 {
@@ -17,7 +18,7 @@ namespace WhatsApp.Tests.Controllers
         public void Get()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            StatusController controller = new StatusController();
 
             // Act
             IEnumerable<string> result = controller.Get();
@@ -33,7 +34,7 @@ namespace WhatsApp.Tests.Controllers
         public void GetById()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            StatusController controller = new StatusController();
 
             // Act
             string result = controller.Get(5);
@@ -46,7 +47,7 @@ namespace WhatsApp.Tests.Controllers
         public void Post()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            StatusController controller = new StatusController();
 
             // Act
             controller.Post("value");
@@ -58,7 +59,7 @@ namespace WhatsApp.Tests.Controllers
         public void Put()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            StatusController controller = new StatusController();
 
             // Act
             controller.Put(5, "value");
@@ -70,7 +71,7 @@ namespace WhatsApp.Tests.Controllers
         public void Delete()
         {
             // Arrange
-            ValuesController controller = new ValuesController();
+            StatusController controller = new StatusController();
 
             // Act
             controller.Delete(5);
