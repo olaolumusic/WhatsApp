@@ -125,6 +125,7 @@
     <Compile Include="Areas\Admin\Controllers\ApplicationLogsController.cs" />
     <Compile Include="Areas\Admin\Controllers\ApplicationSettingsController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserManagementController.cs" />
     <Compile Include="Areas\Admin\Controllers\SecuritySettingController.cs" />
     <Compile Include="Areas\Admin\Controllers\ReportsController.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
@@ -1456,6 +1457,13 @@
     <Content Include="Areas\Admin\Views\ApplicationSettings\Index.cshtml" />
     <Content Include="Areas\Admin\Views\ApplicationLogs\Index.cshtml" />
     <Content Include="Areas\Admin\Views\SecuritySetting\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_HeadersAssets.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_FooterScripts.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Headers.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_SideBar.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_QuickPanel.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Footer.cshtml" />
+    <Content Include="Areas\Admin\Views\UserManagement\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
