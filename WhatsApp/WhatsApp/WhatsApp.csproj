@@ -1464,6 +1464,10 @@
     <Content Include="Areas\Admin\Views\Shared\_QuickPanel.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Footer.cshtml" />
     <Content Include="Areas\Admin\Views\UserManagement\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Cart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_QuickActions.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Notifications.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Search.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
