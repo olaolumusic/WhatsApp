@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp", "WhatsApp\WhatsA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Tests", "WhatsApp.Tests\WhatsApp.Tests.csproj", "{1DB625C5-E4B2-4B13-9EB1-C3D2F4C6250C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Core", "WhatsApp.Core\WhatsApp.Core.csproj", "{3F53CEA1-D322-4662-A818-00DC584B795B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Repository", "WhatsApp.Repository\WhatsApp.Repository.csproj", "{AAA6C1EA-9AAD-454C-A945-61B4F34FC66B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1DB625C5-E4B2-4B13-9EB1-C3D2F4C6250C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DB625C5-E4B2-4B13-9EB1-C3D2F4C6250C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DB625C5-E4B2-4B13-9EB1-C3D2F4C6250C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F53CEA1-D322-4662-A818-00DC584B795B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F53CEA1-D322-4662-A818-00DC584B795B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F53CEA1-D322-4662-A818-00DC584B795B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F53CEA1-D322-4662-A818-00DC584B795B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA6C1EA-9AAD-454C-A945-61B4F34FC66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA6C1EA-9AAD-454C-A945-61B4F34FC66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA6C1EA-9AAD-454C-A945-61B4F34FC66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA6C1EA-9AAD-454C-A945-61B4F34FC66B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
