@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Core", "WhatsApp.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsApp.Repository", "WhatsApp.Repository\WhatsApp.Repository.csproj", "{AAA6C1EA-9AAD-454C-A945-61B4F34FC66B}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WhatsApp.db", "WhatsApp.db\WhatsApp.db.sqlproj", "{2A7E4B7C-7BE5-406F-BD31-29192A8F2126}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{AAA6C1EA-9AAD-454C-A945-61B4F34FC66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAA6C1EA-9AAD-454C-A945-61B4F34FC66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAA6C1EA-9AAD-454C-A945-61B4F34FC66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7E4B7C-7BE5-406F-BD31-29192A8F2126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7E4B7C-7BE5-406F-BD31-29192A8F2126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7E4B7C-7BE5-406F-BD31-29192A8F2126}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2A7E4B7C-7BE5-406F-BD31-29192A8F2126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7E4B7C-7BE5-406F-BD31-29192A8F2126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7E4B7C-7BE5-406F-BD31-29192A8F2126}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
