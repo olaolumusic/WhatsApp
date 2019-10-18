@@ -56,5 +56,13 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="tables" />
+    <Folder Include="procedures" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="tables\application_settings.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WhatsApp.db.publish.xml" />
   </ItemGroup>
 </Project>
