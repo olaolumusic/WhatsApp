@@ -1522,6 +1522,16 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WhatsApp.Core\WhatsApp.Core.csproj">
+      <Project>{3f53cea1-d322-4662-a818-00dc584b795b}</Project>
+      <Name>WhatsApp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WhatsApp.Repository\WhatsApp.Repository.csproj">
+      <Project>{aaa6c1ea-9aad-454c-a945-61b4f34fc66b}</Project>
+      <Name>WhatsApp.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
