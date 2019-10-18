@@ -1,17 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using WhatsApp.Repository.Dao;
+using WhatsApp.Repository.Interfaces;
 
 namespace WhatsApp.Areas.Admin.Controllers
 {
     public class ApplicationSettingsController : Controller
     {
+        private readonly IApplicationSettingsRepository _applicationSettings;
+
+        public ApplicationSettingsController()
+        {
+            _applicationSettings = new ApplicationSettingsRepository();
+        }
+
         // GET: Admin/Admin
         public ActionResult Index()
         {
-            return View();
+            var applicationSettings = _applicationSettings.FindAll();
+
+            return View(applicationSettings);
         }
 
         // GET: Admin/Admin/Details/5
