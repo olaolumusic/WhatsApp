@@ -96,7 +96,8 @@
     <div class="alert alert-light alert-elevate" role="alert">
         <div class="alert-icon"><i class="flaticon-warning kt-font-brand"></i></div>
         <div class="alert-text">
-            The default page control presented by DataTables (forward and backward buttons with up to 7 page numbers in-between) is fine for most situations.
+            The Metronic Datatable component supports local or remote data source. For the local data you can pass javascript array as data source. In this example the grid fetches its data from a javascript array data source. It also defines
+            the schema model of the data source. In addition to the visualization, the Datatable provides built-in support for operations over data such as sorting, filtering and paging performed in user browser(frontend).
         </div>
     </div>
     <div class="kt-portlet kt-portlet--mobile">
@@ -106,399 +107,144 @@
                     <i class="kt-font-brand flaticon2-line-chart"></i>
                 </span>
                 <h3 class="kt-portlet__head-title">
-                    Extended Pagination
+                    Local Datatable with Child Table
                 </h3>
             </div>
             <div class="kt-portlet__head-toolbar">
                 <div class="kt-portlet__head-wrapper">
-                    <div class="kt-portlet__head-actions">
-                        <div class="dropdown dropdown-inline">
-                            <button type="button" class="btn btn-default btn-icon-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="la la-download"></i> Export
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <ul class="kt-nav">
-                                    <li class="kt-nav__section kt-nav__section--first">
-                                        <span class="kt-nav__section-text">Choose an option</span>
-                                    </li>
-                                    <li class="kt-nav__item">
-                                        <a href="#" class="kt-nav__link">
-                                            <i class="kt-nav__link-icon la la-print"></i>
-                                            <span class="kt-nav__link-text">Print</span>
-                                        </a>
-                                    </li>
-                                    <li class="kt-nav__item">
-                                        <a href="#" class="kt-nav__link">
-                                            <i class="kt-nav__link-icon la la-copy"></i>
-                                            <span class="kt-nav__link-text">Copy</span>
-                                        </a>
-                                    </li>
-                                    <li class="kt-nav__item">
-                                        <a href="#" class="kt-nav__link">
-                                            <i class="kt-nav__link-icon la la-file-excel-o"></i>
-                                            <span class="kt-nav__link-text">Excel</span>
-                                        </a>
-                                    </li>
-                                    <li class="kt-nav__item">
-                                        <a href="#" class="kt-nav__link">
-                                            <i class="kt-nav__link-icon la la-file-text-o"></i>
-                                            <span class="kt-nav__link-text">CSV</span>
-                                        </a>
-                                    </li>
-                                    <li class="kt-nav__item">
-                                        <a href="#" class="kt-nav__link">
-                                            <i class="kt-nav__link-icon la la-file-pdf-o"></i>
-                                            <span class="kt-nav__link-text">PDF</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <a href="#" class="btn btn-clean btn-icon-sm">
+                        <i class="la la-long-arrow-left"></i>
+                        Back
+                    </a>
+                    &nbsp;
+                    <div class="dropdown dropdown-inline">
+                        <button type="button" class="btn btn-brand btn-icon-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="flaticon2-plus"></i> Add New
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <ul class="kt-nav">
+                                <li class="kt-nav__section kt-nav__section--first">
+                                    <span class="kt-nav__section-text">Choose an action:</span>
+                                </li>
+                                <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                        <i class="kt-nav__link-icon flaticon2-open-text-book"></i>
+                                        <span class="kt-nav__link-text">Reservations</span>
+                                    </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                        <i class="kt-nav__link-icon flaticon2-calendar-4"></i>
+                                        <span class="kt-nav__link-text">Appointments</span>
+                                    </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                        <i class="kt-nav__link-icon flaticon2-bell-alarm-symbol"></i>
+                                        <span class="kt-nav__link-text">Reminders</span>
+                                    </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                        <i class="kt-nav__link-icon flaticon2-contract"></i>
+                                        <span class="kt-nav__link-text">Announcements</span>
+                                    </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                        <i class="kt-nav__link-icon flaticon2-shopping-cart-1"></i>
+                                        <span class="kt-nav__link-text">Orders</span>
+                                    </a>
+                                </li>
+                                <li class="kt-nav__separator kt-nav__separator--fit">
+                                </li>
+                                <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                        <i class="kt-nav__link-icon flaticon2-rocket-1"></i>
+                                        <span class="kt-nav__link-text">Projects</span>
+                                    </a>
+                                </li>
+                                <li class="kt-nav__item">
+                                    <a href="#" class="kt-nav__link">
+                                        <i class="kt-nav__link-icon flaticon2-chat-1"></i>
+                                        <span class="kt-nav__link-text">User Feedbacks</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        &nbsp;
-                        <a href="#" class="btn btn-brand btn-elevate btn-icon-sm">
-                            <i class="la la-plus"></i>
-                            New Record
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="kt-portlet__body">
 
-            <!--begin: Datatable -->
-            <div id="kt_table_1_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
-                <div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="kt_table_1_length"><label>Show <select name="kt_table_1_length" aria-controls="kt_table_1" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="kt_table_1_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="kt_table_1"></label></div></div></div><div class="row">
-                    <div class="col-sm-12">
-                        <table class="table table-striped- table-bordered table-hover table-checkable dataTable no-footer dtr-inline" id="kt_table_1" role="grid" aria-describedby="kt_table_1_info" style="width: 1060px;">
-                            <thead>
-                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 46.25px;" aria-sort="ascending" aria-label="Record ID: activate to sort column descending">Record ID</th><th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 38.25px;" aria-label="Order ID: activate to sort column ascending">Order ID</th><th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 56.25px;" aria-label="Country: activate to sort column ascending">Country</th><th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 64.25px;" aria-label="Ship City: activate to sort column ascending">Ship City</th><th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 76.25px;" aria-label="Ship Address: activate to sort column ascending">Ship Address</th><th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 70.25px;" aria-label="Company Agent: activate to sort column ascending">Company Agent</th><th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 93.25px;" aria-label="Company Name: activate to sort column ascending">Company Name</th><th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 39.25px;" aria-label="Ship Date: activate to sort column ascending">Ship Date</th><th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 48.25px;" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 32.25px;" aria-label="Type: activate to sort column ascending">Type</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 68.5px;" aria-label="Actions">Actions</th></tr>
-                            </thead>
-                            <tbody>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                <tr role="row" class="odd">
-                                    <td tabindex="0" class="sorting_1">1</td>
-                                    <td>61715-075</td>
-                                    <td>China</td>
-                                    <td>Tieba</td>
-                                    <td>746 Pine View Junction</td>
-                                    <td>Nixie Sailor</td>
-                                    <td>Gleichner, Ziemann and Gutkowski</td>
-                                    <td>2/12/2018</td>
-                                    <td><span class="kt-badge  kt-badge--primary kt-badge--inline kt-badge--pill">Canceled</span></td>
-                                    <td><span class="kt-badge kt-badge--primary kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-primary">Retail</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td tabindex="0" class="sorting_1">2</td>
-                                    <td>63629-4697</td>
-                                    <td>Indonesia</td>
-                                    <td>Cihaur</td>
-                                    <td>01652 Fulton Trail</td>
-                                    <td>Emelita Giraldez</td>
-                                    <td>Rosenbaum-Reichel</td>
-                                    <td>8/6/2017</td>
-                                    <td><span class="kt-badge  kt-badge--danger kt-badge--inline kt-badge--pill">Danger</span></td>
-                                    <td><span class="kt-badge kt-badge--success kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-success">Direct</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td tabindex="0" class="sorting_1">3</td>
-                                    <td>68084-123</td>
-                                    <td>Argentina</td>
-                                    <td>Puerto Iguazú</td>
-                                    <td>2 Pine View Park</td>
-                                    <td>Ula Luckin</td>
-                                    <td>Kulas, Cassin and Batz</td>
-                                    <td>5/26/2016</td>
-                                    <td><span class="kt-badge kt-badge--brand kt-badge--inline kt-badge--pill">Pending</span></td>
-                                    <td><span class="kt-badge kt-badge--primary kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-primary">Retail</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td tabindex="0" class="sorting_1">4</td>
-                                    <td>67457-428</td>
-                                    <td>Indonesia</td>
-                                    <td>Talok</td>
-                                    <td>3050 Buell Terrace</td>
-                                    <td>Evangeline Cure</td>
-                                    <td>Pfannerstill-Treutel</td>
-                                    <td>7/2/2016</td>
-                                    <td><span class="kt-badge kt-badge--brand kt-badge--inline kt-badge--pill">Pending</span></td>
-                                    <td><span class="kt-badge kt-badge--success kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-success">Direct</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td tabindex="0" class="sorting_1">5</td>
-                                    <td>31722-529</td>
-                                    <td>Austria</td>
-                                    <td>Sankt Andrä-Höch</td>
-                                    <td>3038 Trailsway Junction</td>
-                                    <td>Tierney St. Louis</td>
-                                    <td>Dicki-Kling</td>
-                                    <td>5/20/2017</td>
-                                    <td><span class="kt-badge  kt-badge--danger kt-badge--inline kt-badge--pill">Delivered</span></td>
-                                    <td><span class="kt-badge kt-badge--success kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-success">Direct</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td tabindex="0" class="sorting_1">6</td>
-                                    <td>64117-168</td>
-                                    <td>China</td>
-                                    <td>Rongkou</td>
-                                    <td>023 South Way</td>
-                                    <td>Gerhard Reinhard</td>
-                                    <td>Gleason, Kub and Marquardt</td>
-                                    <td>11/26/2016</td>
-                                    <td><span class="kt-badge  kt-badge--info kt-badge--inline kt-badge--pill">Info</span></td>
-                                    <td><span class="kt-badge kt-badge--success kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-success">Direct</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td tabindex="0" class="sorting_1">7</td>
-                                    <td>43857-0331</td>
-                                    <td>China</td>
-                                    <td>Baiguo</td>
-                                    <td>56482 Fairfield Terrace</td>
-                                    <td>Englebert Shelley</td>
-                                    <td>Jenkins Inc</td>
-                                    <td>6/28/2016</td>
-                                    <td><span class="kt-badge  kt-badge--danger kt-badge--inline kt-badge--pill">Delivered</span></td>
-                                    <td><span class="kt-badge kt-badge--success kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-success">Direct</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td tabindex="0" class="sorting_1">8</td>
-                                    <td>64980-196</td>
-                                    <td>Croatia</td>
-                                    <td>Vinica</td>
-                                    <td>0 Elka Street</td>
-                                    <td>Hazlett Kite</td>
-                                    <td>Streich LLC</td>
-                                    <td>8/5/2016</td>
-                                    <td><span class="kt-badge  kt-badge--danger kt-badge--inline kt-badge--pill">Danger</span></td>
-                                    <td><span class="kt-badge kt-badge--danger kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-danger">Online</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td tabindex="0" class="sorting_1">9</td>
-                                    <td>0404-0360</td>
-                                    <td>Colombia</td>
-                                    <td>San Carlos</td>
-                                    <td>38099 Ilene Hill</td>
-                                    <td>Freida Morby</td>
-                                    <td>Haley, Schamberger and Durgan</td>
-                                    <td>3/31/2017</td>
-                                    <td><span class="kt-badge  kt-badge--danger kt-badge--inline kt-badge--pill">Delivered</span></td>
-                                    <td><span class="kt-badge kt-badge--danger kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-danger">Online</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr role="row" class="even">
-                                    <td tabindex="0" class="sorting_1">10</td>
-                                    <td>52125-267</td>
-                                    <td>Thailand</td>
-                                    <td>Maha Sarakham</td>
-                                    <td>8696 Barby Pass</td>
-                                    <td>Obed Helian</td>
-                                    <td>Labadie, Predovic and Hammes</td>
-                                    <td>1/26/2017</td>
-                                    <td><span class="kt-badge kt-badge--brand kt-badge--inline kt-badge--pill">Pending</span></td>
-                                    <td><span class="kt-badge kt-badge--success kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-success">Direct</span></td>
-                                    <td nowrap="">
-                                        <span class="dropdown">
-                                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                                                <i class="la la-ellipsis-h"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                                            </div>
-                                        </span>
-                                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                                            <i class="la la-edit"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <!--begin: Search Form -->
+            <div class="kt-form kt-form--label-right kt-margin-t-20 kt-margin-b-10">
+                <div class="row align-items-center">
+                    <div class="col-xl-8 order-2 order-xl-1">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 kt-margin-b-20-tablet-and-mobile">
+                                <div class="kt-input-icon kt-input-icon--left">
+                                    <input type="text" class="form-control" placeholder="Search..." id="generalSearch">
+                                    <span class="kt-input-icon__icon kt-input-icon__icon--left">
+                                        <span><i class="la la-search"></i></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 kt-margin-b-20-tablet-and-mobile">
+                                <div class="kt-form__group kt-form__group--inline">
+                                    <div class="kt-form__label">
+                                        <label>Status:</label>
+                                    </div>
+                                    <div class="kt-form__control">
+                                        <div class="dropdown bootstrap-select form-control">
+                                            <select class="form-control bootstrap-select" id="kt_form_status" tabindex="-98">
+                                                <option value="">All</option>
+                                                <option value="1">Pending</option>
+                                                <option value="2">Delivered</option>
+                                                <option value="3">Canceled</option>
+                                                <option value="4">Success</option>
+                                                <option value="5">Info</option>
+                                                <option value="6">Danger</option>
+                                            </select><button type="button" class="btn dropdown-toggle bs-placeholder btn-light" data-toggle="dropdown" role="button" data-id="kt_form_status" title="All"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">All</div></div> </div></button><div class="dropdown-menu " role="combobox"><div class="inner show" role="listbox" aria-expanded="false" tabindex="-1"><ul class="dropdown-menu inner show"></ul></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 kt-margin-b-20-tablet-and-mobile">
+                                <div class="kt-form__group kt-form__group--inline">
+                                    <div class="kt-form__label">
+                                        <label>Type:</label>
+                                    </div>
+                                    <div class="kt-form__control">
+                                        <div class="dropdown bootstrap-select form-control">
+                                            <select class="form-control bootstrap-select" id="kt_form_type" tabindex="-98">
+                                                <option value="">All</option>
+                                                <option value="1">Online</option>
+                                                <option value="2">Retail</option>
+                                                <option value="3">Direct</option>
+                                            </select><button type="button" class="btn dropdown-toggle bs-placeholder btn-light" data-toggle="dropdown" role="button" data-id="kt_form_type" title="All"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">All</div></div> </div></button><div class="dropdown-menu " role="combobox"><div class="inner show" role="listbox" aria-expanded="false" tabindex="-1"><ul class="dropdown-menu inner show"></ul></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="kt_table_1_info" role="status" aria-live="polite">Showing 1 to 10 of 50 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_full_numbers" id="kt_table_1_paginate"><ul class="pagination"><li class="paginate_button page-item first disabled" id="kt_table_1_first"><a href="#" aria-controls="kt_table_1" data-dt-idx="0" tabindex="0" class="page-link"><i class="la la-angle-double-left"></i></a></li><li class="paginate_button page-item previous disabled" id="kt_table_1_previous"><a href="#" aria-controls="kt_table_1" data-dt-idx="1" tabindex="0" class="page-link"><i class="la la-angle-left"></i></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="kt_table_1" data-dt-idx="2" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_table_1" data-dt-idx="3" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_table_1" data-dt-idx="4" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_table_1" data-dt-idx="5" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="kt_table_1" data-dt-idx="6" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item next" id="kt_table_1_next"><a href="#" aria-controls="kt_table_1" data-dt-idx="7" tabindex="0" class="page-link"><i class="la la-angle-right"></i></a></li><li class="paginate_button page-item last" id="kt_table_1_last"><a href="#" aria-controls="kt_table_1" data-dt-idx="8" tabindex="0" class="page-link"><i class="la la-angle-double-right"></i></a></li></ul></div></div></div>
+                    <div class="col-xl-4 order-1 order-xl-2 kt-align-right">
+                        <a href="#" class="btn btn-default kt-hidden">
+                            <i class="la la-cart-plus"></i> New Order
+                        </a>
+                        <div class="kt-separator kt-separator--border-dashed kt-separator--space-lg d-xl-none"></div>
+                    </div>
+                </div>
             </div>
+
+            <!--end: Search Form -->
+        </div>
+        <div class="kt-portlet__body kt-portlet__body--fit">
+
+            <!--begin: Datatable -->
+            <div class="kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--subtable kt-datatable--loaded" id="child_data_local" style=""><table class="kt-datatable__table" style="display: block; min-height: 500px;"><thead class="kt-datatable__head"><tr class="kt-datatable__row"><th data-field="RecordID" class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--sort"><span style="width: 30px;"></span></th><th data-field="FirstName" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">First Name</span></th><th data-field="LastName" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Last Name</span></th><th data-field="Company" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Company</span></th><th data-field="Email" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Email</span></th><th data-field="Status" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Status</span></th><th data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Type</span></th><th data-field="Actions" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 130px;">Actions</span></th></tr></thead><tbody class="kt-datatable__body" style=""><tr data-row="0" class="kt-datatable__row kt-datatable__row--even"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="1" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Tommie</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Pee</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Roodel</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">tpee0@slashdot.org</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge  kt-badge--success kt-badge--inline kt-badge--pill">Success</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--danger kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-danger">Online</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr><tr data-row="1" class="kt-datatable__row"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="2" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Scott</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Coldbreath</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Zooxo</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">scoldbreath1@zdnet.com</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge  kt-badge--info kt-badge--inline kt-badge--pill">Info</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--danger kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-danger">Online</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr><tr data-row="2" class="kt-datatable__row kt-datatable__row--even"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="3" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Flss</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Thake</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Riffpath</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">fthake2@ifeng.com</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge  kt-badge--primary kt-badge--inline kt-badge--pill">Canceled</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--danger kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-danger">Online</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr><tr data-row="3" class="kt-datatable__row"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="4" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Vincents</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Frearson</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Katz</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">vfrearson3@amazon.de</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge  kt-badge--success kt-badge--inline kt-badge--pill">Success</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--primary kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-primary">Retail</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr><tr data-row="4" class="kt-datatable__row kt-datatable__row--even"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="5" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Antony</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Stranger</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Tavu</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">astranger4@sfgate.com</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge  kt-badge--danger kt-badge--inline kt-badge--pill">Delivered</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--success kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-success">Direct</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr><tr data-row="5" class="kt-datatable__row"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="6" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Valaree</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Keson</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Tagcat</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">vkeson5@tamu.edu</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge  kt-badge--info kt-badge--inline kt-badge--pill">Info</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--danger kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-danger">Online</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr><tr data-row="6" class="kt-datatable__row kt-datatable__row--even"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="7" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Loella</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Tenniswood</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Midel</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">ltenniswood6@godaddy.com</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge  kt-badge--danger kt-badge--inline kt-badge--pill">Danger</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--success kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-success">Direct</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr><tr data-row="7" class="kt-datatable__row"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="8" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Marinna</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Oda</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Photofeed</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">moda7@live.com</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge  kt-badge--danger kt-badge--inline kt-badge--pill">Danger</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--primary kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-primary">Retail</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr><tr data-row="8" class="kt-datatable__row kt-datatable__row--even"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="9" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Tarra</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Dallicott</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Yamia</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">tdallicott8@goodreads.com</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--brand kt-badge--inline kt-badge--pill">Pending</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--primary kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-primary">Retail</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr><tr data-row="9" class="kt-datatable__row"><td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="10" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td><td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">Hakim</span></td><td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">Coat</span></td><td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">Zoombox</span></td><td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">hcoat9@google.ca</span></td><td data-field="Status" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge  kt-badge--primary kt-badge--inline kt-badge--pill">Canceled</span></span></td><td data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell"><span style="width: 110px;"><span class="kt-badge kt-badge--primary kt-badge--dot"></span>&nbsp;<span class="kt-font-bold kt-font-primary">Retail</span></span></td><td data-field="Actions" class="kt-datatable__cell"><span style="overflow: visible; position: relative; width: 130px;">		                  <div class="dropdown">		                      <a data-toggle="dropdown" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                          <i class="la la-ellipsis-h"></i>		                      </a>		                      <div class="dropdown-menu dropdown-menu-right">		                          <a href="#" class="dropdown-item"><i class="la la-edit"></i> Edit Details</a>		                          <a href="#" class="dropdown-item"><i class="la la-leaf"></i> Update Status</a>		                          <a href="#" class="dropdown-item"><i class="la la-print"></i> Generate Report</a>		                      </div>		                  </div>		                  <a title="Edit details" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-edit"></i>		                  </a>		                  <a title="Delete" class="btn btn-sm btn-clean btn-icon btn-icon-md">		                      <i class="la la-trash"></i>		                  </a>		              </span></td></tr></tbody></table><div class="kt-datatable__pager kt-datatable--paging-loaded"><ul class="kt-datatable__pager-nav"><li><a title="First" class="kt-datatable__pager-link kt-datatable__pager-link--first kt-datatable__pager-link--disabled" data-page="1" disabled="disabled"><i class="flaticon2-fast-back"></i></a></li><li><a title="Previous" class="kt-datatable__pager-link kt-datatable__pager-link--prev kt-datatable__pager-link--disabled" data-page="1" disabled="disabled"><i class="flaticon2-back"></i></a></li><li style=""></li><li style="display: none;"><input type="text" class="kt-pager-input form-control" title="Page number"></li><li style=""><a class="kt-datatable__pager-link kt-datatable__pager-link-number kt-datatable__pager-link--active" data-page="1" title="1">1</a></li><li style=""><a class="kt-datatable__pager-link kt-datatable__pager-link-number" data-page="2" title="2">2</a></li><li style=""><a class="kt-datatable__pager-link kt-datatable__pager-link-number" data-page="3" title="3">3</a></li><li style=""><a class="kt-datatable__pager-link kt-datatable__pager-link-number" data-page="4" title="4">4</a></li><li style=""><a class="kt-datatable__pager-link kt-datatable__pager-link-number" data-page="5" title="5">5</a></li><li></li><li><a title="Next" class="kt-datatable__pager-link kt-datatable__pager-link--next" data-page="2"><i class="flaticon2-next"></i></a></li><li><a title="Last" class="kt-datatable__pager-link kt-datatable__pager-link--last" data-page="35"><i class="flaticon2-fast-next"></i></a></li></ul><div class="kt-datatable__pager-info"><div class="dropdown bootstrap-select kt-datatable__pager-size" style="width: 60px;"><select class="selectpicker kt-datatable__pager-size" title="Select page size" data-width="60px" data-selected="10" tabindex="-98"><option class="bs-title-option" value=""></option><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="50">50</option><option value="100">100</option></select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="button" title="Select page size"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">10</div></div> </div></button><div class="dropdown-menu " role="combobox"><div class="inner show" role="listbox" aria-expanded="false" tabindex="-1"><ul class="dropdown-menu inner show"></ul></div></div></div><span class="kt-datatable__pager-detail">Showing 1 - 10 of 350</span></div></div></div>
 
             <!--end: Datatable -->
         </div>

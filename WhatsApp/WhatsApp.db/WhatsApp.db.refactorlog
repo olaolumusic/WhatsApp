@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="4ffc8523-22f2-4926-960a-f48d97fb3e4d" ChangeDateTime="10/22/2019 10:21:49">
+    <Property Name="ElementName" Value="[dbo].[user_mamagement].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[user_mamagement]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Username" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f00f9fc9-452b-416f-a380-c5c51df8fd60" ChangeDateTime="10/22/2019 10:22:16">
+    <Property Name="ElementName" Value="[dbo].[user_mamagement].[FirstName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[user_mamagement]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Firstname" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="05fd3f4d-5aa2-418e-a105-9f6a0676191f" ChangeDateTime="10/22/2019 10:33:36">
+    <Property Name="ElementName" Value="[dbo].[application_logs].[PhoneType]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[application_logs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DeviceName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="10e67f7d-7643-487b-9aff-94dcebc9d6c2" ChangeDateTime="10/22/2019 10:37:04">
+    <Property Name="ElementName" Value="[dbo].[reports].[Status]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[reports]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LoginStatus" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="178dcc43-c126-4e31-9de2-0f3217243e20" ChangeDateTime="10/22/2019 10:37:17">
+    <Property Name="ElementName" Value="[dbo].[reports].[Image]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[reports]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LoginDateAndTime" />
+  </Operation>
+</Operations>

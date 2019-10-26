@@ -61,8 +61,15 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="tables\application_settings.sql" />
+    <Build Include="tables\application_logs.sql" />
+    <Build Include="tables\reports.sql" />
+    <Build Include="tables\security_settings.sql" />
+    <Build Include="tables\user_management.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="WhatsApp.db.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="WhatsApp.db.refactorlog" />
   </ItemGroup>
 </Project>
