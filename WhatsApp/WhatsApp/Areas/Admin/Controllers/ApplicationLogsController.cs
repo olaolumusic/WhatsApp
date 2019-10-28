@@ -1,17 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿
 using System.Web.Mvc;
+using WhatsApp.Repository.Dao;
+using WhatsApp.Repository.Interfaces;
 
 namespace WhatsApp.Areas.Admin.Controllers
 {
-    public class ApplicationLogsController : Controller
-    {
-        // GET: Admin/Admin
-        public ActionResult Index()
+        public class ApplicationLogsController : Controller
         {
-            return View();
+            private readonly IApplicationLogsRepository _applicationLogs;
+
+            public ApplicationLogsController()
+            {
+                _applicationLogs = new ApplicationLogsRepository();
+            }
+            // GET: Admin/Admin
+            public ActionResult Index()
+        {
+            var applicationLogs = _applicationLogs.FindAll();
+            return View(applicationLogs);
         }
 
         // GET: Admin/Admin/Details/5

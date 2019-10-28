@@ -1,9 +1,6 @@
 ﻿using Dapper;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WhatsApp.Core.Dto.Applogs;
 using WhatsApp.Core.Dto.Appsettings;
 using WhatsApp.Repository.Interfaces;
@@ -34,11 +31,6 @@ namespace WhatsApp.Repository.Dao
         }
 
         public ApplicationLogs FindById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        ApplicationSettings IApplicationLogsRepository.FindById(int id)
         {
             throw new NotImplementedException();
         }

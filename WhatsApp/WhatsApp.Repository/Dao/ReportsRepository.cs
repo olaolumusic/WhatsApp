@@ -1,10 +1,6 @@
 ﻿using Dapper;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WhatsApp.Core.Dto.Appsettings;
 using WhatsApp.Core.Dto.Reports;
 using WhatsApp.Repository.Interfaces;
 
@@ -23,7 +19,7 @@ namespace WhatsApp.Repository.Dao
             {
                 using (var conn = SqlDatabaseConnectionHelper.OpenConnection())
                 {
-                    var result = conn.Query<Reports>("SELECT [Id] ,[Name] ,[LoginStatus] ,[LoginDateAndTime]  ,[IPAddress] FROM [application_settings](nolock)");
+                    var result = conn.Query<Reports>("SELECT [Id] ,[Name] ,[LoginStatus] ,[IPAddress] FROM [reports](nolock)");
                     return result;
                 }
             }
@@ -34,11 +30,6 @@ namespace WhatsApp.Repository.Dao
         }
 
         public Reports FindById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        ApplicationSettings IReportsRepository.FindById(int id)
         {
             throw new NotImplementedException();
         }
