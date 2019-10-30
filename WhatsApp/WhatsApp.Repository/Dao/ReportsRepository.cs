@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using WhatsApp.Core.Dto.Reports;
+using System.Data;
 using WhatsApp.Repository.Interfaces;
 
 namespace WhatsApp.Repository.Dao
@@ -19,7 +20,8 @@ namespace WhatsApp.Repository.Dao
             {
                 using (var conn = SqlDatabaseConnectionHelper.OpenConnection())
                 {
-                    var result = conn.Query<Reports>("SELECT [Id] ,[Name] ,[LoginStatus] ,[IPAddress] FROM [reports](nolock)");
+                    var result = conn.Query<Reports>(sql:"reports_findall",
+                        commandType: CommandType.StoredProcedure);
                     return result;
                 }
             }

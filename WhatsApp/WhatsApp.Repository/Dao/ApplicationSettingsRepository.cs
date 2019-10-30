@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using WhatsApp.Core.Dto.Appsettings;
 using WhatsApp.Repository.Interfaces;
 
@@ -19,7 +20,8 @@ namespace WhatsApp.Repository.Dao
             {
                 using (var conn = SqlDatabaseConnectionHelper.OpenConnection())
                 {
-                    var result = conn.Query<ApplicationSettings>("SELECT [Id] ,[Name] ,[Value] ,[Group]  ,[Description] FROM [application_settings](nolock)");
+                    var result = conn.Query<ApplicationSettings>(sql:"application_settings_findall",
+                                  commandType: CommandType.StoredProcedure);
                     return result;
                 }
             }
