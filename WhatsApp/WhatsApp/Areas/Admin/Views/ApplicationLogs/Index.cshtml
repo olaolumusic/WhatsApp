@@ -251,13 +251,10 @@
             <table class="kt-datatable__table" style="display: block; min-height: 500px;">
                 <thead class="kt-datatable__head"><tr class="kt-datatable__row">
     <th data-field="RecordID" class="kt-datatable__cell--center kt-datatable__cell kt-datatable__cell--sort"><span style="width: 30px;"></span></th>
-    <th data-field="FirstName" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Id</span></th>
-    <th data-field="LastName" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Name</span></th>
-    <th data-field="Company" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">State</span></th>
-    <th data-field="Email" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Country</span></th>
-    <th data-field="Status" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Device Name</span></th>
-    <th data-field="Status" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">User Agent</span></th>
-    <th data-field="Type" data-autohide-disabled="false" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Phone Number</span></th>
+    <th data-field="FirstName" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">LogId</span></th>
+    <th data-field="LastName" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Log Message</span></th>
+    <th data-field="Company" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Stack Trace</span></th>
+    <th data-field="Email" class="kt-datatable__cell kt-datatable__cell--sort"><span style="width: 110px;">Log Date</span></th>
 
 </tr>
                     </thead>
@@ -271,13 +268,10 @@
                                         <tr data-row="0" class="kt-datatable__row kt-datatable__row--even">
 
                                             <td class="kt-datatable__cell--center kt-datatable__cell" data-field="RecordID"><a class="kt-datatable__toggle-subtable" href="#" data-value="1" title="Load sub table" style="width: 30px;"><i class="fa fa-caret-right" style="width: 30px;"></i></a></td>
-                                            <td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">@item.Id</span></td>
-                                            <td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">@item.Name</span></td>
-                                            <td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">@item.State</span></td>
-                                            <td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">@item.Country</span></td>
-                                            <td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">@item.DeviceName</span></td>
-                                            <td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">@item.UserAgent</span></td>
-                                            <td data-field="Email" class="kt-datatable__cell"><span style="width: 110px;">@item.PhoneNumber</span></td>
+                                            <td data-field="FirstName" class="kt-datatable__cell"><span style="width: 110px;">@item.LogId</span></td>
+                                            <td data-field="LastName" class="kt-datatable__cell"><span style="width: 110px;">@item.LogMessage</span></td>
+                                            <td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">@item.StackTrace</span></td>
+                                            <td data-field="Company" class="kt-datatable__cell"><span style="width: 110px;">@item.LogDate</span></td>
 
 
                                         </tr>     
