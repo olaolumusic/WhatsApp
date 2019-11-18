@@ -65,10 +65,15 @@
     <Build Include="tables\security_settings.sql" />
     <Build Include="tables\user_management.sql" />
     <Build Include="procedures\application_settings_findall.sql" />
-    <Build Include="procedures\application_settings_findbyid.sql" />
     <Build Include="procedures\application-logs_findall.sql" />
     <Build Include="procedures\reports_findall.sql" />
     <Build Include="tables\application_logs.sql" />
+    <Build Include="procedures\application_logs_findbyId.sql" />
+    <Build Include="procedures\application_settings_findbyId.sql" />
+    <Build Include="procedures\application_settings_insertupdate.sql" />
+    <Build Include="procedures\application_logs_insertupdate.sql" />
+    <Build Include="procedures\reports_findbyid.sql" />
+    <Build Include="procedures\reports_insertupdate.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="WhatsApp.db.publish.xml" />

@@ -5,6 +5,8 @@ using System.Data;
 using WhatsApp.Core.Dto.Appsettings;
 using WhatsApp.Repository.Interfaces;
 
+
+
 namespace WhatsApp.Repository.Dao
 {
     public class ApplicationSettingsRepository : IApplicationSettingsRepository

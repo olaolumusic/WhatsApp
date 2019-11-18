@@ -1,6 +1,13 @@
-﻿CREATE PROCEDURE [dbo].[application_settings_findall]
-	@param1 int = 0,
-	@param2 int
+﻿CREATE PROCEDURE application_settings_findall
+(@rowStart int =1,
+@rowEnd int =10
+)
 AS
-	SELECT @param1, @param2
-RETURN 0
+SELECT TOP (@rowEnd) [Id]
+      ,[Name]
+      ,[Value]
+      ,[Group]
+      ,[Description]
+  FROM [whatsapp-db].[dbo].[application_settings]
+
+  order by Id desc

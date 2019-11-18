@@ -1,6 +1,6 @@
-﻿CREATE PROCEDURE [dbo].[application_settings_findbyid]
-	@param1 int = 0,
-	@param2 int
-AS
-	SELECT @param1, @param2
-RETURN 0
+﻿create procedure application_settings_findbyId
+(@id int
+)
+as 
+select * from application_settings
+where Id = @id
