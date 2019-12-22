@@ -178,10 +178,8 @@
                                     <th class="sorting_asc" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 46.25px;" aria-sort="ascending" aria-label="Record ID: activate to sort column descending">ID</th> 
                                     <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 53.25px;" aria-label="Name: activate to sort column ascending">Name</th> 
                                     <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 53.25px;" aria-label="Value: activate to sort column ascending">Value</th> 
-                                    <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 53.25px;" aria-label="Description: activate to sort column ascending">Description</th> 
-                                    <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 39.25px;" aria-label="Ship Date: activate to sort column ascending">Ship Date</th> 
-                                    <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 32.25px;" aria-label="Type: activate to sort column ascending">Type</th>
-                                    
+                                    <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 53.25px;" aria-label="Description: activate to sort column ascending">Group</th> 
+                                    <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 39.25px;" aria-label="Ship Date: activate to sort column ascending">Description</th> 
                                 </tr>
                             </thead>
                             <tbody>
@@ -191,20 +189,11 @@
                                         foreach (var item in Model)
                                         {
                                                                 <tr role="row" class="odd">
-                                                                    <td tabindex="0" class="sorting_1">1</td>
-                                                                    <td>Nixie Sailor</td>
-                                                                    <td>61715-075</td>
-                                                                    <td>China</td>
-                                                                    <td>Tieba</td>
-                                                                    <td>746 Pine View Junction</td>
-
-
-                                                                    @item.Id
-                                                                    @item.Name
-                                                                    @item.Value
-                                                                    @item.Group
-                                                                    @item.Description
-
+                                                                                                    <td tabindex="0" class="sorting_1">@item.Id</td>
+                                                                                                    <td>@item.Name</td>
+                                                                                                    <td>@item.Value</td>
+                                                                                                    <td>@item.Group</td>
+                                                                                                    <td>@item.Description</td>
                                                                 </tr>
 
                                         }

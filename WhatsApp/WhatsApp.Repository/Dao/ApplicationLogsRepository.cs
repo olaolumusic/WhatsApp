@@ -1,11 +1,8 @@
 ﻿using Dapper;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
 using WhatsApp.Core.Dto.Applogs;
-using WhatsApp.Core.Dto.Appsettings;
 using WhatsApp.Repository.Interfaces;
 
 namespace WhatsApp.Repository.Dao
@@ -23,7 +20,8 @@ namespace WhatsApp.Repository.Dao
             {
                 using (var conn = SqlDatabaseConnectionHelper.OpenConnection())
                 {
-                    var result = conn.Query<ApplicationLogs>("SELECT [Id] ,[Name] ,[PhoneNumber] ,[State]  ,[Country] ,[DeviceName] ,[TimeDuration] ,[UserAgent] FROM [application_logs](nolock)");
+                    var result = conn.Query<ApplicationLogs>(sql:"application_logs_findall",
+                        commandType: CommandType.StoredProcedure);
                     return result;
                 }
             }
@@ -34,11 +32,6 @@ namespace WhatsApp.Repository.Dao
         }
 
         public ApplicationLogs FindById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        ApplicationSettings IApplicationLogsRepository.FindById(int id)
         {
             throw new NotImplementedException();
         }

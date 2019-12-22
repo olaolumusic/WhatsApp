@@ -1,8 +1,6 @@
 ﻿@using WhatsApp.Core.Dto.Reports;
 @model IEnumerable<Reports>
 
-
-
 <!-- begin:: Subheader -->
 <div class="kt-subheader   kt-grid__item" id="kt_subheader">
     <div class="kt-container  kt-container--fluid ">
@@ -176,14 +174,11 @@
                     <div class="col-sm-12">
                         <table class="table table-striped- table-bordered table-hover table-checkable dataTable no-footer dtr-inline" id="kt_table_1" role="grid" aria-describedby="kt_table_1_info" style="width: 1060px;">
                             <thead>
-                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 46.25px;" aria-sort="ascending" aria-label="Record ID: activate to sort column descending">ID</th>
+                                <tr role="row">
+                                <th class="sorting_asc" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 46.25px;" aria-sort="ascending" aria-label="Record ID: activate to sort column descending">ID</th>
                                 <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 38.25px;" aria-label="Order ID: activate to sort column ascending">Name</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 64.25px;" aria-label="Ship City: activate to sort column ascending">Ship City</th>
+                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 64.25px;" aria-label="Ship City: activate to sort column ascending">Login Status</th>
                                 <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 76.25px;" aria-label="Ship Address: activate to sort column ascending">IP Address</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 39.25px;" aria-label="Ship Date: activate to sort column ascending">Login Date</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 48.25px;" aria-label="Status: activate to sort column ascending">Status</th>
-                                <th class="sorting" tabindex="0" aria-controls="kt_table_1" rowspan="1" colspan="1" style="width: 32.25px;" aria-label="Type: activate to sort column ascending">Type</th>
-                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 68.5px;" aria-label="Actions">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -193,19 +188,10 @@
                                         foreach (var item in Model)
                                         {
                                             <tr role="row" class="odd">
-                                                <td tabindex="0" class="sorting_1">1</td>
-                                                <td>61715-075</td>
-                                                <td>China</td>
-                                                <td>Tieba</td>
-                                                <td>746 Pine View Junction</td>
-                                                <td>Nixie Sailor</td>
-                                                <td>2/12/2018</td>
-                                               
-                                                @item.Id
-                                                @item.Name
-                                                @item.LoginStatus
-                                                @item.IPAddress
-
+                                            <td tabindex="0" class="sorting_1">@item.Id</td>
+                                            <td>@item.Name</td>
+                                            <td> @item.LoginStatus</td>
+                                            <td>@item.IPAddress</td>
                                             </tr>
                                             }
                                         }
