@@ -13,5 +13,10 @@ namespace WhatsApp.Controllers
         {
             return View();
         }
+        // GET: Account
+        //public JsonResult Login()
+        //{
+        //    return View();
+        //}
     }
 }
