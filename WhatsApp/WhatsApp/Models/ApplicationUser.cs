@@ -13,7 +13,7 @@ namespace WhatsApp.App_Start
     public class ApplicationUser : IdentityUser
     {
         public string FirstName { get; set; }
-        public string LatName { get; set; }
+        public string LastName { get; set; }
         public string UserImagerUrl { get; set; }
         public string AboutMe { get; set; }
         public string Gender { get; set; }
@@ -41,8 +41,7 @@ namespace WhatsApp.App_Start
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
-        } 
+        }
     }
 }
 
-   

@@ -9,7 +9,7 @@ namespace WhatsApp.Controllers
     public class AccountController : BaseController
     {
         // GET: Account
-        public ActionResult Index()
+        public ActionResult Login()
         {
             return View();
         }
