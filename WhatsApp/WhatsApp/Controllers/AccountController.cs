@@ -9,9 +9,14 @@ namespace WhatsApp.Controllers
     public class AccountController : BaseController
     {
         // GET: Account
-        public ActionResult Index()
+        public ActionResult Login()
         {
             return View();
         }
+        // GET: Account
+        //public JsonResult Login()
+        //{
+        //    return View();
+        //}
     }
 }
